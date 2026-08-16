@@ -1,0 +1,16 @@
+[2026-08-08T00:34:04.181Z] - Método: GET - Ruta: /
+[2026-08-08T00:34:04.660Z] - Método: GET - Ruta: /favicon.ico
+[2026-08-08T00:34:58.026Z] - Método: GET - Ruta: /status
+[2026-08-08T00:35:11.163Z] - Método: GET - Ruta: /
+[2026-08-08T00:45:08.595Z] - Método: GET - Ruta: /status
+[2026-08-08T00:46:13.720Z] - Método: GET - Ruta: /22
+[2026-08-08T01:14:52.553Z] - Método: GET - Ruta: //favicon.ico
+[2026-08-08T01:15:01.707Z] - Método: GET - Ruta: /favicon.ico
+[2026-08-08T01:16:03.281Z] - Método: GET - Ruta: /
+[2026-08-08T01:16:18.910Z] - Método: GET - Ruta: /
+[2026-08-08T01:16:33.976Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-08-12T01:02:40.520Z] - Método: GET - Ruta: /
+[2026-08-12T01:02:49.791Z] - Método: GET - Ruta: /
+[2026-08-12T01:03:24.548Z] - Método: GET - Ruta: /
+[2026-08-12T01:03:25.038Z] - Método: GET - Ruta: /favicon.ico
+[2026-08-12T01:04:07.805Z] - Método: GET - Ruta: /status
