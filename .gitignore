@@ -3,7 +3,11 @@ node_modules/
 
 # Variables de entorno
 .env
+.gitignore
 
 # Archivos del sistema operativo
 .DS_Store
 Thumbs.db
+.tmp.driveupload
+.tmp.drivedownload
+*.ini

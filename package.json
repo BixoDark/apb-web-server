@@ -1,7 +1,7 @@
 {
   "name": "abp-m6",
   "version": "1.0.0",
-  "description": "",
+  "description": "Plataforma backend con Node.js y Express para la planificación y control de stock comercial por eventos.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
