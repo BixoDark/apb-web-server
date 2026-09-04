@@ -2,7 +2,7 @@ const express = require('express');
 const { engine } = require('express-handlebars');
 const path = require('path');
 
-const loggerMiddleware = require('./middlewares/logger');
+const loggerMiddleware = require('./middlewares/loggers');
 const routes = require('./routes');
 
 const app = express();

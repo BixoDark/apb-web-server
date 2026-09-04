@@ -1,18 +1,21 @@
 const fs = require('fs');
 const path = require('path');
 
-const logger = (req, res, next) => {
+const logFilePath = path.join(__dirname, '../../logs/log.txt');
+
+const writeLog = (message) => {
     const formattedDate = new Date().toISOString();
-    const logEntry = `[${formattedDate}] - Método: ${req.method} - Ruta: ${req.url}\n`;
-    
-    // Apunta de forma directa a la carpeta /logs en la raíz
-    const logFilePath = path.join(__dirname, '../../logs/log.txt');
+    const logEntry = `[${formattedDate}] - ${message}\n`;
 
     fs.appendFile(logFilePath, logEntry, (err) => {
         if (err) console.error('Error en escritura de log:', err);
     });
+};
 
+const logger = (req, res, next) => {
+    writeLog(`Método: ${req.method} - Ruta: ${req.url}`);
     next();
 };
 
 module.exports = logger;
+module.exports.writeLog = writeLog;

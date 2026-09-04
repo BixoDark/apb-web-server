@@ -1,125 +1,183 @@
-# Commercial Inventory & Event Supply Planner
+# ABP M6 | Gestión de usuarios
 
-Sistema backend modular desarrollado con **Node.js** y **Express** diseñado para optimizar el control de existencias, previsión de demanda y aprovisionamiento estratégico de inventario vinculado a eventos comerciales para pequeños y medianos comercios.
+Aplicación web desarrollada con Node.js, Express y Handlebars para administrar un directorio de usuarios desde una interfaz server-side rendered.
 
----
+El proyecto permite registrar, consultar, editar y eliminar usuarios, validando los datos ingresados y dejando trazabilidad de las solicitudes y operaciones realizadas mediante un archivo de logs.
 
-## 🎯 Visión General
+## Funcionalidades
 
-**Commercial Inventory Planner** proporciona una base de servicios web y renderizado dinámico para la administración de stock en función de fechas críticas (temporadas altas, eventos especiales, ferias comerciales). 
+- Página de bienvenida.
+- Panel de estado del servidor con estado, tiempo activo y fecha de consulta.
+- Gestión completa de usuarios:
+  - Crear usuarios.
+  - Listar usuarios registrados.
+  - Editar información existente.
+  - Eliminar usuarios.
+- Validación de campos obligatorios y salario no negativo.
+- Registro de accesos y operaciones en `logs/log.txt`.
+- Manejo de rutas inexistentes con respuesta HTTP 404.
+- API REST JSON para consultar y administrar usuarios desde Postman u otros clientes HTTP.
+- La interfaz web consume la API JSON y transforma sus respuestas en contenido visible.
 
-Esta primera fase arquitectónica establece el núcleo del servidor, control de acceso a recursos estáticos, procesamiento de vistas mediante motor de plantillas, exposición de endpoints de diagnóstico y un subsistema de persistencia en archivos planos para auditoría de tráfico.
+## Tecnologías
 
----
+- [Node.js](https://nodejs.org/)
+- [Express](https://expressjs.com/)
+- [Express Handlebars](https://github.com/express-handlebars/express-handlebars)
+- [dotenv](https://github.com/motdotla/dotenv)
+- [Moment](https://momentjs.com/)
+- [Nodemon](https://nodemon.io/) para desarrollo
 
-## ⚙️ Requisitos Previos
+## Requisitos
 
-* **Node.js**: v18.0.0 o superior
-* **NPM**: v9.0.0 o superior
-* **Entorno**: Compatible con sistemas UNIX (Linux/macOS) y Windows
+- Node.js y npm instalados.
+- Una terminal con acceso a la carpeta del proyecto.
 
----
-
-## 🛠️ Instalación y Puesta en Marcha
-
-### 1. Clonar el repositorio
-```bash
-git clone https://github.com/BixoDark/Commercial-Inventory-Planner.git
-cd Commercial-Inventory-Planner
-```
-
-### 2. Instalar dependencias
-```bash
-npm install
-```
-
-### 3. Configurar variables de entorno
-Crea un archivo `.env` en la raíz del proyecto basándote en la siguiente plantilla:
-```env
-PORT=3000
-NODE_ENV=development
-```
-
-### 4. Ejecución del aplicativo
-
-El archivo `package.json` cuenta con scripts parametrizados según el entorno de trabajo:
+Puedes comprobar las versiones disponibles con:
 
 ```bash
-# Modo Desarrollo (monitoreo en tiempo real y reinicio automático con nodemon)
-npm run dev
+node --version
+npm --version
+```
 
-# Modo Producción (ejecución estándar de servidor)
+## Instalación
+
+1. Clona el repositorio y entra en su carpeta:
+
+	```bash
+	git clone <URL_DEL_REPOSITORIO>
+	cd abp-m6
+	```
+
+2. Instala las dependencias:
+
+	```bash
+	npm install
+	```
+
+3. Crea un archivo `.env` en la raíz del proyecto si necesitas configurar un puerto distinto al predeterminado:
+
+	```env
+	PORT=3000
+	```
+
+## Ejecución
+
+### Modo producción o ejecución estándar
+
+```bash
 npm start
 ```
 
----
+### Modo desarrollo
 
-## 🏗️ Arquitectura y Estructura del Proyecto
+Reinicia automáticamente el servidor cuando detecta cambios en los archivos:
 
-La estructura del código sigue una separación estricta de responsabilidades bajo el patrón MVC:
-
-```text
-Commercial-Inventory-Planner/
-│
-├── logs/
-│   └── log.txt                  # Bitácora de persistencia y trazabilidad de tráfico
-│
-├── public/                      # Activos públicos y estáticos servidos por Express
-│   ├── css/                     # Hojas de estilo UI / Dashboard
-│   ├── js/                      # Lógica interactiva del lado del cliente
-│   └── images/                  # Recursos gráficos
-│
-├── src/
-│   ├── controllers/             # Controladores que resuelven la lógica de negocio
-│   ├── middlewares/             # Funciones intermedias (logger de auditoría, parseo)
-│   │   └── loggers.js           # Middleware de registro de peticiones (módulo fs)
-│   ├── routes/                  # Enrutadores modulares de la aplicación
-│   │   └── index.js             # Definición de rutas públicas y puntos de acceso
-│   └── views/                   # Vistas y layouts de la interfaz
-│       ├── layouts/
-│       │   └── main.handlebars  # Layout contenedor global
-│       └── home.handlebars      # Vista de inventario y programación de eventos
-│
-├── .env.example                 # Plantilla de referencia de entorno
-├── .gitignore                   # Reglas de exclusión de dependencias y secretos
-├── package.json                 # Configuración de dependencias y scripts de inicio
-├── README.md                    # Documentación del sistema
-└── server.js                    # Punto de entrada y configuración central del servidor
+```bash
+npm run dev
 ```
 
----
+Con la configuración predeterminada, la aplicación estará disponible en:
 
-## 🔌 Especificación de Rutas y Servicios
+<http://localhost:3000>
 
-| Método | Ruta | Formato | Descripción |
-| :--- | :--- | :--- | :--- |
-| `GET` | `/` | `text/html` | Renderiza la interfaz principal del sistema con panel de inventario y eventos próximos. |
-| `GET` | `/status` | `application/json` | Endpoint de diagnóstico que expone el estado de salud del servidor, timestamp y versión. |
-| `*` | Ruta indefinida | `text/html` | Captura de rutas no contempladas (Manejo centralizado de Error 404). |
+## Rutas principales
 
----
+| Método | Ruta | Descripción |
+| --- | --- | --- |
+| `GET` | `/` | Página de inicio |
+| `GET` | `/status` | Estado del servidor en HTML o JSON |
+| `GET` | `/usuarios` | Vista web; devuelve JSON con `Accept: application/json` |
+| `GET` | `/api/usuarios` | Devuelve todos los usuarios en JSON |
+| `POST` | `/api/usuarios` | Crea un usuario desde un cuerpo JSON |
+| `PUT` | `/api/usuarios/:id` | Actualiza un usuario desde un cuerpo JSON |
+| `DELETE` | `/api/usuarios/:id` | Elimina un usuario |
 
-## 📐 Decisiones de Diseño y Fundamentos Técnicos
+Las rutas `/usuarios` conservan el flujo de formularios web tradicional. La API utiliza los métodos HTTP estándar: `GET` para consultar (pull), `POST` para crear, `PUT` para actualizar y `DELETE` para eliminar. `push` y `pull` no son métodos HTTP; son términos habituales para enviar y obtener información.
 
-### Punto de Entrada (`server.js`)
-Se definió `server.js` como el archivo principal de la aplicación para designar de forma semántica el archivo responsable de montar la infraestructura HTTP, inicializar los middlewares del ciclo de vida de Express, definir el motor de plantillas y habilitar la escucha del puerto de red.
+## Uso con Postman
 
-### Modularización en Capas
-El proyecto desacopla las capas de transporte (`routes`), procesamiento (`controllers`) y validación/auditoría (`middlewares`). Esta separación garantiza alta mantenibilidad, facilita las pruebas unitarias y simplifica la posterior integración de capas de acceso a datos (ORM/ODM) y autenticación basada en tokens.
+Para `POST` y `PUT`, selecciona **Body > raw > JSON** y utiliza:
 
-### Persistencia y Auditoría de Tráfico (`fs.appendFile`)
-Se implementó un middleware de auditoría en `src/middlewares/loggers.js` que utiliza el sistema de archivos nativo de Node.js (`fs.appendFile`) para registrar de forma no bloqueante cada interacción con el servidor en `logs/log.txt`. Cada registro almacena:
-* Timestamp detallado (fecha y hora exacta).
-* Método HTTP (`GET`, `POST`, etc.).
-* Ruta solicitada y dirección IP cliente.
+```json
+{
+	"nombre": "Ana",
+	"apellido": "Pérez",
+	"lugar": "Santiago",
+	"salario": "850000"
+}
+```
 
-Esto provee una bitácora local de trazabilidad de uso del sistema sin penalizar el rendimiento del bucle de eventos (*event loop*).
+También debes enviar el encabezado:
 
-### Motor de Vistas y Distribución Estática
-Se utilizó `express-handlebars` para componer plantillas HTML modulares mediante layouts compartidos, integrando `express.static()` para distribuir eficientemente recursos de soporte en `/public` (CSS, JS cliente y multimedia).
+```text
+Content-Type: application/json
+```
 
----
+Ejemplos de URLs:
 
-## 👨‍💻 Autor
+```text
+GET    http://localhost:3000/api/usuarios
+POST   http://localhost:3000/api/usuarios
+PUT    http://localhost:3000/api/usuarios/1
+DELETE http://localhost:3000/api/usuarios/1
+```
 
-* **Victor Navarrete**
+Las respuestas de la API tienen formato JSON. Las operaciones exitosas incluyen un mensaje y, cuando corresponde, el usuario afectado.
+
+### Datos de usuario
+
+El formulario utiliza los siguientes campos:
+
+| Campo | Tipo | Regla |
+| --- | --- | --- |
+| `nombre` | Texto | Obligatorio |
+| `apellido` | Texto | Obligatorio |
+| `lugar` | Texto | Obligatorio |
+| `salario` | Número | Obligatorio y mayor o igual que `0` |
+
+Para obtener la respuesta JSON del estado del servidor, realiza una solicitud que no acepte HTML. Por ejemplo:
+
+```bash
+curl -H "Accept: application/json" http://localhost:3000/status
+```
+
+## Estructura del proyecto
+
+```text
+abp-m6/
+├── public/                 # Archivos estáticos: CSS y JavaScript del cliente
+├── src/
+│   ├── controllers/        # Lógica de las solicitudes
+│   ├── middlewares/        # Middleware de logging
+│   ├── routes/             # Definición de rutas
+│   ├── views/              # Plantillas Handlebars y layout principal
+│   └── app.js              # Configuración de la aplicación Express
+├── logs/
+│   └── log.txt             # Registro de accesos y operaciones
+├── server.js               # Punto de entrada del servidor
+├── package.json            # Scripts y dependencias
+└── .env                    # Variables de entorno locales, no versionar
+```
+
+## Persistencia y logs
+
+Los usuarios se almacenan actualmente en memoria. Por este motivo, la información registrada se pierde cuando el servidor se reinicia. La carpeta `logs/` conserva un registro de accesos, altas, modificaciones y eliminaciones en formato de texto.
+
+El archivo `.env` debe mantenerse fuera del control de versiones. Si se utiliza Git, se recomienda incluirlo en `.gitignore` junto con otros archivos locales o sensibles.
+
+## Scripts disponibles
+
+| Comando | Uso |
+| --- | --- |
+| `npm start` | Inicia el servidor con Node.js |
+| `npm run dev` | Inicia el servidor con Nodemon |
+| `npm test` | Placeholder de pruebas; todavía no hay una suite configurada |
+
+## Autor
+
+**Victor Navarrete**
+
+## Licencia
+
+Este proyecto se distribuye bajo la licencia ISC, de acuerdo con la configuración de `package.json`.

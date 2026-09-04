@@ -1,0 +1,28 @@
+<section class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-5">
+    <div><p class="eyebrow mb-1">Directorio</p><h1 class="display-5 fw-bold mb-2">Usuarios</h1><p class="subtitle mb-0">Administra los datos y la información salarial del equipo.</p></div>
+    <span class="badge text-bg-light border p-2">{{users.length}} registrados</span>
+</section>
+{{#if error}}<div class="alert alert-warning" role="alert">{{error}}</div>{{/if}}
+<section class="row g-4">
+    <div class="col-lg-4">
+        <form id="user-form" class="user-form bg-white border rounded-3 p-4" method="POST" action="{{#if editingUser}}/usuarios/{{editingUser.id}}/editar{{else}}/usuarios{{/if}}" data-user-id="{{editingUser.id}}">
+            <h2 class="h4 mb-4">{{#if editingUser}}Editar usuario{{else}}Agregar usuario{{/if}}</h2>
+            <div class="mb-3"><label class="form-label" for="nombre">Nombre</label><input class="form-control" id="nombre" name="nombre" value="{{editingUser.nombre}}" required></div>
+            <div class="mb-3"><label class="form-label" for="apellido">Apellido</label><input class="form-control" id="apellido" name="apellido" value="{{editingUser.apellido}}" required></div>
+            <div class="mb-3"><label class="form-label" for="lugar">Ciudad</label><input class="form-control" id="lugar" name="lugar" value="{{editingUser.lugar}}" required></div>
+            <div class="mb-4"><label class="form-label" for="salario">Salario</label><input class="form-control" id="salario" name="salario" type="number" min="0" step="0.01" value="{{editingUser.salario}}" required></div>
+            <button class="btn btn-dark w-100" type="submit">{{#if editingUser}}Guardar cambios{{else}}Agregar usuario{{/if}}</button>
+            {{#if editingUser}}<a class="btn btn-link text-secondary w-100 mt-2" href="/usuarios">Cancelar edición</a>{{/if}}
+        </form>
+    </div>
+    <div class="col-lg-8">
+        <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-2"><h2 class="h4 mb-0">Personas registradas</h2><span class="small text-secondary">Auditoría activa</span></div>
+        <div id="user-list">
+            {{#if users.length}}
+                {{#each users}}
+                    <article class="d-flex align-items-center gap-3 py-3 border-bottom"><div class="avatar">{{nombre.[0]}}{{apellido.[0]}}</div><div class="flex-grow-1"><h3 class="h6 mb-1">{{nombre}} {{apellido}}</h3><p class="small mb-0">{{lugar}} · ${{salario}}</p></div><div class="d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="/usuarios?editar={{id}}">Editar</a><form method="POST" action="/usuarios/{{id}}/eliminar" data-user-id="{{id}}"><button class="btn btn-sm btn-outline-danger" type="submit">Eliminar</button></form></div></article>
+                {{/each}}
+            {{else}}<p class="alert alert-light border mt-3">Todavía no hay usuarios. Agrega el primero desde el formulario.</p>{{/if}}
+        </div>
+    </div>
+</section>
