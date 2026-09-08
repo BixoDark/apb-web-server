@@ -19,7 +19,7 @@ const renderUsers = (users) => {
 		const lastName = escapeHtml(user.apellido);
 		return `<article class="d-flex align-items-center gap-3 py-3 border-bottom">
 			<div class="avatar">${firstName.charAt(0)}${lastName.charAt(0)}</div>
-			<div class="flex-grow-1"><h3 class="h6 mb-1">${firstName} ${lastName}</h3><p class="small mb-0">${escapeHtml(user.lugar)} · $${escapeHtml(user.salario)}</p></div>
+			<div class="flex-grow-1"><h3 class="h6 mb-1">${firstName} ${lastName}</h3><p class="small mb-0">${escapeHtml(user.lugar)} · $${escapeHtml(user.salario)} · ID: ${escapeHtml(user.id)}</p></div>
 			<div class="d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="/usuarios?editar=${user.id}">Editar</a><form method="POST" data-user-id="${user.id}"><button class="btn btn-sm btn-outline-danger" type="submit">Eliminar</button></form></div>
 		</article>`;
 	}).join('');

@@ -25,7 +25,6 @@ El proyecto permite registrar, consultar, editar y eliminar usuarios, validando 
 - [Express](https://expressjs.com/)
 - [Express Handlebars](https://github.com/express-handlebars/express-handlebars)
 - [dotenv](https://github.com/motdotla/dotenv)
-- [Moment](https://momentjs.com/)
 - [Nodemon](https://nodemon.io/) para desarrollo
 
 ## Requisitos
@@ -38,7 +37,6 @@ Puedes comprobar las versiones disponibles con:
 ```bash
 node --version
 npm --version
-```
 
 ## Instalación
 
@@ -152,7 +150,6 @@ abp-m6/
 │   ├── middlewares/        # Middleware de logging
 │   ├── routes/             # Definición de rutas
 │   ├── views/              # Plantillas Handlebars y layout principal
-│   └── app.js              # Configuración de la aplicación Express
 ├── logs/
 │   └── log.txt             # Registro de accesos y operaciones
 ├── server.js               # Punto de entrada del servidor

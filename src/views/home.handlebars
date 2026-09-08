@@ -1,2 +1,28 @@
-<h1>{{title}}</h1>
-<p>{{message}}</p>
+<!-- Vista Principal / Bienvenida -->
+<section class="py-4 py-lg-5">
+  <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white">
+    <div class="card-body p-4 p-sm-5 text-center">
+      <!-- Icono decorativo -->
+      <div class="d-inline-flex align-items-center justify-content-center p-3 rounded-circle bg-primary-subtle text-primary mb-4 shadow-sm" style="width: 64px; height: 64px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-rocket-takeoff-fill" viewBox="0 0 16 16">
+          <path d="M12.17 9.53c2.307-2.592 3.278-4.684 3.641-6.218.21-.887.214-1.58.16-2.065a3.6 3.6 0 0 0-.108-.563 2 2 0 0 0-.078-.23V.45l-.007-.015a.7.7 0 0 0-.057-.099l-.045-.052A.5.5 0 0 0 14.5 0h-.5a2 2 0 0 0-.45.058 4 4 0 0 0-.427.147c-.408.18-1.01.512-1.819 1.135-1.12.863-2.509 2.228-4.003 4.015l-.622.744c-.742-.14-1.552-.055-2.29.3-.92.44-1.63 1.242-1.92 2.199l-.028.092a4.4 4.4 0 0 0-.125.614 5 5 0 0 0-.018.868c.04.56.26 1.23.82 1.79l.06.06c.56.56 1.23.78 1.79.82.34.024.633.005.868-.018a4.4 4.4 0 0 0 .614-.125l.092-.028c.957-.29 1.76-1 2.199-1.92.355-.738.44-1.548.3-2.29l.744-.622zM5.224 11.77a3 3 0 0 1-.226-.588c-.28-.9-.08-1.77.49-2.34l.66-.66a35 35 0 0 1 2.81 3.28l-.05.05c-.57.57-1.44.77-2.34.49a3 3 0 0 1-.588-.226l-.756.756a1.8 1.8 0 0 1-.76.438L3 13.5l.53-.744a1.8 1.8 0 0 1 .438-.76z"/>
+          <path d="M2.385 10.086a.5.5 0 0 1 .7-.057l1.5 1.25a.5.5 0 0 1-.643.768l-1.5-1.25a.5.5 0 0 1-.057-.711m6.554 2.829a.5.5 0 0 1 .707-.055l1.5 1.25a.5.5 0 0 1-.65.762l-1.5-1.25a.5.5 0 0 1-.057-.707"/>
+        </svg>
+      </div>
+
+      <!-- Título y descripción -->
+      <h1 class="h2 fw-bold tracking-tight text-dark mb-3">{{title}}</h1>
+      <p class="lead text-secondary mx-auto mb-4" style="max-width: 600px;">{{message}}</p>
+
+      <!-- Botones de acceso rápido adaptados a móvil/desktop -->
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-2 pt-2">
+        <a href="/usuarios" class="btn btn-primary px-4 py-2 rounded-3 fw-semibold shadow-sm">
+          Ir a Usuarios
+        </a>
+        <a href="/status" class="btn btn-outline-secondary px-4 py-2 rounded-3">
+          Ver Estado
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,13 +1,21 @@
+const { randomInt } = require('node:crypto');
 const { writeLog } = require('../middlewares/loggers');
 const users = [];
-let nextUserId = 1;
+
+const generateUserId = () => {
+    let id;
+    do {
+        id = randomInt(100000, 1000000);
+    } while (users.some((user) => user.id === id));
+    return id;
+};
 
 const getUserData = (body) => ({
     nombre: String(body.nombre || '').trim(),
     apellido: String(body.apellido || '').trim(),
     lugar: String(body.lugar || '').trim(),
     salario: String(body.salario || '').trim()
-});
+ });
 
 const validateUser = (user) => user.nombre && user.apellido && user.lugar && user.salario && Number(user.salario) >= 0;
 
@@ -57,7 +65,7 @@ const getUsers = (req, res) => {
 const createUser = (req, res) => {
     const user = getUserData(req.body);
     if (!validateUser(user)) return res.redirect('/usuarios?error=1');
-    user.id = nextUserId++;
+    user.id = generateUserId();
     users.push(user);
     writeLog(`USUARIO AGREGADO - ID: ${user.id} - Nombre: ${user.nombre} ${user.apellido} - Lugar: ${user.lugar} - Salario: ${user.salario}`);
     res.redirect('/usuarios');
@@ -95,7 +103,7 @@ const getUsersJson = (req, res) => {
 const createUserJson = (req, res) => {
     const user = getUserData(req.body);
     if (!validateUser(user)) return sendValidationError(res);
-    user.id = nextUserId++;
+    user.id = generateUserId();
     users.push(user);
     writeLog(`USUARIO AGREGADO - ID: ${user.id} - Nombre: ${user.nombre} ${user.apellido} - Lugar: ${user.lugar} - Salario: ${user.salario}`);
     res.status(201).json({ mensaje: 'Usuario creado correctamente.', usuario: user });
