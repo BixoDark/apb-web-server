@@ -232,3 +232,428 @@
 [2026-09-08T01:29:47.211Z] - Método: GET - Ruta: /status
 [2026-09-08T01:29:48.862Z] - Método: GET - Ruta: /usuarios
 [2026-09-08T01:29:48.939Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-08T14:43:56.557Z] - Método: GET - Ruta: /
+[2026-09-08T14:43:56.721Z] - Método: GET - Ruta: /favicon.ico
+[2026-09-08T14:43:59.844Z] - Método: GET - Ruta: /
+[2026-09-08T14:44:07.373Z] - Método: GET - Ruta: /usuarios
+[2026-09-08T14:44:07.472Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-08T14:46:01.603Z] - Método: GET - Ruta: /
+[2026-09-08T14:46:24.876Z] - Método: GET - Ruta: /status
+[2026-09-08T14:46:35.010Z] - Método: GET - Ruta: /usuarios
+[2026-09-08T14:46:35.087Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-08T14:52:59.214Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-08T14:53:11.408Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-08T14:53:11.408Z] - USUARIO AGREGADO - ID: 222718 - Nombre: Leonardo Monsalves - Lugar: linares - Salario: 300000
+[2026-09-08T14:54:21.771Z] - USUARIO AGREGADO - ID: 864598 - Nombre: Maria Venegaz - Lugar: linares - Salario: 300000
+[2026-09-08T14:54:21.771Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-08T14:54:42.395Z] - Método: DELETE - Ruta: /api/usuarios/864598
+[2026-09-08T14:54:42.395Z] - USUARIO ELIMINADO - ID: 864598 - Nombre: Maria Venegaz - Lugar: linares - Salario: 300000
+[2026-09-08T14:55:20.618Z] - Método: DELETE - Ruta: /api/usuarios
+[2026-09-08T14:55:27.469Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-08T14:55:27.469Z] - USUARIO AGREGADO - ID: 515833 - Nombre: Maria Venegaz - Lugar: Codegua - Salario: 300000
+[2026-09-08T14:55:52.550Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-08T14:57:02.986Z] - Método: PUT - Ruta: /api/usuarios/222718
+[2026-09-08T14:57:02.987Z] - USUARIO EDITADO - ID: 222718 - Nombre: Claudia Venegaz - Lugar: Valparaiso - Salario: 300000
+[2026-09-08T14:57:16.520Z] - Método: DELETE - Ruta: /api/usuarios/222718
+[2026-09-08T14:57:16.520Z] - USUARIO ELIMINADO - ID: 222718 - Nombre: Claudia Venegaz - Lugar: Valparaiso - Salario: 300000
+[2026-09-11T22:51:40.485Z] - Método: GET - Ruta: /
+[2026-09-11T22:51:40.615Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T22:51:40.800Z] - Método: GET - Ruta: /favicon.ico
+[2026-09-11T22:51:57.552Z] - Método: GET - Ruta: /
+[2026-09-11T22:51:57.599Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T22:52:00.049Z] - Método: GET - Ruta: /status
+[2026-09-11T22:52:00.178Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T22:52:02.407Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T22:52:02.484Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T22:52:02.529Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:32:58.445Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:32:58.577Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:32:58.692Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:33:05.859Z] - Método: GET - Ruta: /
+[2026-09-11T23:33:05.902Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:53:33.256Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:54:56.110Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-11T23:54:56.242Z] - USUARIO AGREGADO - ID: 1 - Nombre: Prueba PostgreSQL - Lugar: Santiago - Salario: 1000.00
+[2026-09-11T23:54:56.276Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:54:56.288Z] - Método: DELETE - Ruta: /api/usuarios/1
+[2026-09-11T23:54:56.294Z] - USUARIO ELIMINADO - ID: 1 - Nombre: Prueba PostgreSQL - Lugar: Santiago - Salario: 1000.00
+[2026-09-11T23:56:00.175Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:56:00.429Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:56:00.539Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:56:26.583Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-11T23:56:26.736Z] - USUARIO AGREGADO - ID: 2 - Nombre: pedro norambuena - Lugar: chillan - Salario: 500000.00
+[2026-09-11T23:56:26.756Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:56:26.837Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:56:26.882Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:56:55.917Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:56:56.113Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:56:56.167Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:57:28.892Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-11T23:57:29.059Z] - USUARIO AGREGADO - ID: 3 - Nombre: cornelio maturana - Lugar: La cisterna - Salario: 300000.00
+[2026-09-11T23:57:29.074Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:57:29.130Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:57:29.182Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:58:50.094Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:58:50.301Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:58:50.409Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:59:09.968Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:59:10.146Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:59:10.193Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:59:11.400Z] - Método: GET - Ruta: /usuarios
+[2026-09-11T23:59:11.470Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:59:11.524Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-11T23:59:12.951Z] - Método: GET - Ruta: /
+[2026-09-11T23:59:12.995Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:59:14.871Z] - Método: GET - Ruta: /
+[2026-09-11T23:59:14.931Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:59:43.678Z] - Método: GET - Ruta: /
+[2026-09-11T23:59:43.736Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:59:44.818Z] - Método: GET - Ruta: /
+[2026-09-11T23:59:44.858Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-11T23:59:46.218Z] - Método: GET - Ruta: /
+[2026-09-11T23:59:46.258Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:00:22.490Z] - Método: GET - Ruta: /
+[2026-09-12T00:00:22.548Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:00:24.519Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:00:24.646Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:00:24.704Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:04:50.954Z] - Método: GET - Ruta: /
+[2026-09-12T00:04:51.006Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:04:52.529Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:04:52.719Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:04:52.774Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:04:54.899Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:04:54.972Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:04:55.025Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:05:19.793Z] - Método: GET - Ruta: /
+[2026-09-12T00:05:24.025Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:05:24.207Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:05:29.226Z] - Método: GET - Ruta: /status
+[2026-09-12T00:05:38.033Z] - Método: GET - Ruta: /
+[2026-09-12T00:05:39.231Z] - Método: GET - Ruta: /
+[2026-09-12T00:06:13.684Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:06:13.827Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:06:15.964Z] - Método: GET - Ruta: /
+[2026-09-12T00:06:17.777Z] - Método: GET - Ruta: /status
+[2026-09-12T00:06:19.720Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:06:19.824Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:06:22.187Z] - Método: DELETE - Ruta: /api/usuarios/2
+[2026-09-12T00:06:22.196Z] - USUARIO ELIMINADO - ID: 2 - Nombre: pedro norambuena - Lugar: chillan - Salario: 500000.00
+[2026-09-12T00:06:22.200Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:06:23.704Z] - Método: DELETE - Ruta: /api/usuarios/3
+[2026-09-12T00:06:23.710Z] - USUARIO ELIMINADO - ID: 3 - Nombre: cornelio maturana - Lugar: La cisterna - Salario: 300000.00
+[2026-09-12T00:06:23.718Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:06:57.940Z] - Método: GET - Ruta: /
+[2026-09-12T00:07:00.242Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:07:00.472Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:08:17.617Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-12T00:08:17.764Z] - USUARIO AGREGADO - ID: 4 - Nombre: Rodolfo Muñoz - Lugar: Providencia - Salario: 1000000.00
+[2026-09-12T00:08:17.778Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:08:17.864Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:20:45.312Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-12T00:20:45.460Z] - USUARIO AGREGADO - ID: 5 - Nombre: Carolina Matamala - Lugar: Codegua - Salario: 3000000.00
+[2026-09-12T00:20:45.476Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:20:45.564Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:21:26.011Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-12T00:21:26.142Z] - USUARIO AGREGADO - ID: 6 - Nombre: Pedro Gonzales - Lugar: Pucon - Salario: 2000000.00
+[2026-09-12T00:21:26.153Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:21:26.225Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:22:02.242Z] - Método: DELETE - Ruta: /api/usuarios
+[2026-09-12T00:22:08.047Z] - Método: DELETE - Ruta: /usuarios
+[2026-09-12T00:22:16.422Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:22:34.188Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:23:04.907Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-12T00:23:05.028Z] - USUARIO AGREGADO - ID: 7 - Nombre: Claudia Venegaz - Lugar: Valparaiso - Salario: 700000.00
+[2026-09-12T00:24:49.657Z] - Método: PUT - Ruta: /api/usuarios/id:7
+[2026-09-12T00:25:04.671Z] - Método: PUT - Ruta: /api/usuarios/i7
+[2026-09-12T00:25:28.451Z] - Método: PUT - Ruta: /api/usuarios/7
+[2026-09-12T00:25:28.568Z] - USUARIO EDITADO - ID: 7 - Nombre: Claudia Venegaz - Lugar: Rancagua - Salario: 700000
+[2026-09-12T00:32:11.989Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:32:30.630Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:32:30.861Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:32:30.918Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:43:53.548Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-12T00:43:53.563Z] - TRANSACCION COMMIT - USUARIO AGREGADO - ID: 8
+[2026-09-12T00:43:53.591Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:43:53.606Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-12T00:43:53.609Z] - TRANSACCION ROLLBACK - Fallo forzado para comprobar el rollback de la transacción.
+[2026-09-12T00:43:53.619Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T00:43:53.623Z] - Método: DELETE - Ruta: /api/usuarios/8
+[2026-09-12T00:43:53.627Z] - USUARIO ELIMINADO - ID: 8 - Nombre: Commit Prueba - Lugar: Santiago - Salario: 1000.00
+[2026-09-12T00:45:37.734Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T00:45:37.899Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T00:45:37.927Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-12T01:17:44.028Z] - Método: GET - Ruta: /usuarios
+[2026-09-12T01:17:44.270Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-12T01:17:44.392Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T22:07:39.556Z] - Método: GET - Ruta: /
+[2026-09-14T22:07:41.074Z] - Método: GET - Ruta: /favicon.ico
+[2026-09-14T22:08:08.483Z] - Método: GET - Ruta: /status
+[2026-09-14T22:08:38.825Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-14T22:19:46.825Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T22:19:47.108Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-14T22:19:47.120Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T22:31:00.321Z] - ACTIVIDAD - admin - CUENTA ESTÁNDAR CREADA
+[2026-09-14T22:31:00.359Z] - ACTIVIDAD - ana - CUENTA ESTÁNDAR CREADA
+[2026-09-14T22:31:00.401Z] - ACTIVIDAD - carlos - CUENTA ESTÁNDAR CREADA
+[2026-09-14T22:31:44.605Z] - Método: GET - Ruta: /usuarios - Usuario: visitante
+[2026-09-14T22:31:45.201Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json - Usuario: visitante
+[2026-09-14T22:31:45.281Z] - Método: GET - Ruta: /api/usuarios - Usuario: visitante
+[2026-09-14T22:32:29.306Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T22:32:29.539Z] - Método: GET - Ruta: /.well-known/appspecific/com.chrome.devtools.json
+[2026-09-14T22:32:29.588Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T22:33:40.728Z] - Método: DELETE - Ruta: /api/usuarios/12
+[2026-09-14T22:33:40.885Z] - USUARIO ELIMINADO - ID: 12 - Nombre: Carlos Arévalo - Lugar: Requínoa - Salario: 850000.00
+[2026-09-14T22:33:40.891Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T22:41:23.835Z] - Método: GET - Ruta: /
+[2026-09-14T22:59:52.536Z] - Método: GET - Ruta: /login
+[2026-09-14T23:00:06.600Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:00:06.876Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:00:08.270Z] - Método: GET - Ruta: /status
+[2026-09-14T23:00:09.621Z] - Método: GET - Ruta: /
+[2026-09-14T23:00:11.515Z] - Método: GET - Ruta: /
+[2026-09-14T23:00:21.075Z] - Método: GET - Ruta: /login
+[2026-09-14T23:00:26.653Z] - Método: GET - Ruta: /login?modo=registro
+[2026-09-14T23:00:54.852Z] - Método: GET - Ruta: /
+[2026-09-14T23:00:56.757Z] - Método: GET - Ruta: /
+[2026-09-14T23:04:55.213Z] - Método: GET - Ruta: /
+[2026-09-14T23:04:59.147Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:04:59.342Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:05:00.493Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:05:00.584Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:05:02.789Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:05:02.905Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:05:37.182Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:05:37.415Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:05:39.294Z] - Método: GET - Ruta: /
+[2026-09-14T23:05:41.599Z] - Método: GET - Ruta: /login
+[2026-09-14T23:06:11.136Z] - Método: GET - Ruta: /login?modo=registro
+[2026-09-14T23:07:00.012Z] - Método: POST - Ruta: /registro
+[2026-09-14T23:07:00.135Z] - TRANSACCION ROLLBACK - no existe la columna User.email
+[2026-09-14T23:09:20.034Z] - Método: GET - Ruta: /login
+[2026-09-14T23:09:24.970Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:09:25.194Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:10:02.285Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-14T23:10:02.557Z] - TRANSACCION COMMIT - USUARIO AGREGADO - ID: 13
+[2026-09-14T23:10:02.575Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:10:02.668Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:10:44.322Z] - Método: GET - Ruta: /login
+[2026-09-14T23:43:22.717Z] - Método: GET - Ruta: /login
+[2026-09-14T23:43:23.877Z] - Método: GET - Ruta: /login
+[2026-09-14T23:43:27.113Z] - Método: GET - Ruta: /login?modo=registro
+[2026-09-14T23:44:05.503Z] - Método: POST - Ruta: /registro
+[2026-09-14T23:44:35.045Z] - Método: POST - Ruta: /registro
+[2026-09-14T23:44:35.373Z] - TRANSACCION COMMIT - USUARIO REGISTRADO - ID: 14 - Email: prueba@gmail.com
+[2026-09-14T23:44:50.843Z] - Método: POST - Ruta: /login
+[2026-09-14T23:44:51.071Z] - LOGIN EXITOSO - ID: 14 - Email: prueba@gmail.com
+[2026-09-14T23:44:51.081Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:44:51.203Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:45:06.247Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-14T23:45:06.494Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:45:11.339Z] - Método: GET - Ruta: /usuarios?editar=13
+[2026-09-14T23:45:11.465Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:45:15.245Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:45:15.353Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:45:17.210Z] - Método: GET - Ruta: /login
+[2026-09-14T23:45:19.042Z] - Método: GET - Ruta: /status
+[2026-09-14T23:45:20.376Z] - Método: GET - Ruta: /
+[2026-09-14T23:46:53.695Z] - Método: GET - Ruta: /status
+[2026-09-14T23:46:55.733Z] - Método: GET - Ruta: /login
+[2026-09-14T23:46:56.788Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:46:56.991Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:46:58.076Z] - Método: GET - Ruta: /login
+[2026-09-14T23:48:04.444Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:48:04.646Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:48:25.755Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-14T23:48:25.921Z] - TRANSACCION COMMIT - USUARIO AGREGADO - ID: 15
+[2026-09-14T23:48:25.942Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:48:26.042Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:48:32.049Z] - Método: GET - Ruta: /usuarios?editar=15
+[2026-09-14T23:48:32.168Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:57:45.708Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:57:46.115Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:57:47.205Z] - Método: GET - Ruta: /login
+[2026-09-14T23:58:26.590Z] - Método: POST - Ruta: /login
+[2026-09-14T23:58:26.917Z] - LOGIN EXITOSO - ID: 14 - Email: prueba@gmail.com
+[2026-09-14T23:58:26.934Z] - Método: GET - Ruta: /perfil
+[2026-09-14T23:59:11.058Z] - Método: GET - Ruta: /login
+[2026-09-14T23:59:12.813Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:59:13.041Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:59:14.188Z] - Método: GET - Ruta: /login
+[2026-09-14T23:59:15.365Z] - Método: GET - Ruta: /status
+[2026-09-14T23:59:16.406Z] - Método: GET - Ruta: /
+[2026-09-14T23:59:31.547Z] - Método: GET - Ruta: /usuarios
+[2026-09-14T23:59:31.775Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:59:35.003Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-14T23:59:35.125Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:59:37.726Z] - Método: GET - Ruta: /usuarios?editar=15
+[2026-09-14T23:59:37.814Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-14T23:59:41.711Z] - Método: GET - Ruta: /usuarios?editar=7
+[2026-09-14T23:59:41.798Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:13.287Z] - Método: GET - Ruta: /usuarios?editar=6
+[2026-09-15T00:02:13.540Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:15.433Z] - Método: GET - Ruta: /usuarios?editar=6
+[2026-09-15T00:02:15.507Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:17.655Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:02:17.780Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:19.456Z] - Método: GET - Ruta: /
+[2026-09-15T00:02:21.256Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T00:02:21.344Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:23.508Z] - Método: GET - Ruta: /usuarios?editar=5
+[2026-09-15T00:02:23.637Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:24.754Z] - Método: GET - Ruta: /usuarios?editar=5
+[2026-09-15T00:02:24.890Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:25.764Z] - Método: GET - Ruta: /usuarios?editar=5
+[2026-09-15T00:02:25.873Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:02:38.016Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-15T00:02:38.251Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:05:30.569Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:05:30.786Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:05:33.026Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:05:33.152Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:05:35.589Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:05:35.686Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:05:38.346Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-15T00:05:48.454Z] - Método: GET - Ruta: /usuarios?editar=
+[2026-09-15T00:05:48.579Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:05:50.961Z] - Método: GET - Ruta: /usuarios?editar=5
+[2026-09-15T00:05:51.078Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:05:53.593Z] - Método: GET - Ruta: /usuarios?editar=7
+[2026-09-15T00:05:53.716Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:06:42.833Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-15T00:06:50.506Z] - Método: GET - Ruta: /usuarios?editar=
+[2026-09-15T00:06:50.623Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:06:52.351Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:06:52.477Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:07:29.672Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-15T00:07:32.444Z] - Método: GET - Ruta: /usuarios?editar=
+[2026-09-15T00:07:32.562Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:07:34.536Z] - Método: GET - Ruta: /usuarios?editar=5
+[2026-09-15T00:07:34.656Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:07:36.907Z] - Método: GET - Ruta: /usuarios?editar=6
+[2026-09-15T00:07:37.020Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:07:37.847Z] - Método: GET - Ruta: /usuarios?editar=6
+[2026-09-15T00:07:37.993Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:07:38.638Z] - Método: GET - Ruta: /usuarios?editar=6
+[2026-09-15T00:07:38.737Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:08:44.735Z] - Método: GET - Ruta: /usuarios?editar=13
+[2026-09-15T00:08:44.982Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:08:47.359Z] - Método: GET - Ruta: /usuarios?editar=13
+[2026-09-15T00:08:47.486Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:08:52.027Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:08:52.159Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:08:53.653Z] - Método: GET - Ruta: /usuarios?editar=6
+[2026-09-15T00:08:53.779Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:13:52.746Z] - Método: GET - Ruta: /usuarios?editar=1
+[2026-09-15T00:14:40.795Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:14:41.062Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:14:45.010Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-15T00:14:57.480Z] - Método: GET - Ruta: /login
+[2026-09-15T00:15:12.110Z] - Método: POST - Ruta: /login
+[2026-09-15T00:15:12.353Z] - LOGIN EXITOSO - ID: 14 - Email: prueba@gmail.com
+[2026-09-15T00:15:12.361Z] - Método: GET - Ruta: /perfil
+[2026-09-15T00:18:42.395Z] - Método: GET - Ruta: /login
+[2026-09-15T00:18:42.373Z] - Método: GET - Ruta: /perfil
+[2026-09-15T00:18:54.657Z] - Método: POST - Ruta: /login
+[2026-09-15T00:18:54.932Z] - LOGIN EXITOSO - ID: 14 - Email: prueba@gmail.com
+[2026-09-15T00:18:54.939Z] - Método: GET - Ruta: /perfil
+[2026-09-15T00:19:03.396Z] - Método: POST - Ruta: /perfil
+[2026-09-15T00:19:03.416Z] - PERFIL ACTUALIZADO - ID: 14 - Nombre: prueba inicial
+[2026-09-15T00:19:03.421Z] - Método: GET - Ruta: /perfil?success=1
+[2026-09-15T00:24:27.550Z] - Método: GET - Ruta: /perfil?success=1
+[2026-09-15T00:24:27.575Z] - Método: GET - Ruta: /login
+[2026-09-15T00:24:38.625Z] - Método: POST - Ruta: /login
+[2026-09-15T00:24:38.920Z] - LOGIN EXITOSO - ID: 14 - Email: prueba@gmail.com
+[2026-09-15T00:24:38.931Z] - Método: GET - Ruta: /perfil
+[2026-09-15T00:24:48.016Z] - Método: GET - Ruta: /
+[2026-09-15T00:24:50.001Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T00:24:50.267Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:24:56.109Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-15T00:25:04.415Z] - Método: GET - Ruta: /perfil
+[2026-09-15T00:25:36.402Z] - Método: GET - Ruta: /status
+[2026-09-15T00:25:37.726Z] - Método: GET - Ruta: /
+[2026-09-15T00:25:39.317Z] - Método: GET - Ruta: /perfil
+[2026-09-15T00:25:41.906Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T00:25:42.024Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:25:44.060Z] - Método: GET - Ruta: /logout
+[2026-09-15T00:25:44.071Z] - Método: GET - Ruta: /login
+[2026-09-15T00:26:02.309Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:27:00.118Z] - Método: PUT - Ruta: /api/usuarios
+[2026-09-15T00:27:13.767Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:28:08.640Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:28:18.854Z] - Método: GET - Ruta: /login
+[2026-09-15T00:28:20.496Z] - Método: GET - Ruta: /
+[2026-09-15T00:28:22.543Z] - Método: GET - Ruta: /login
+[2026-09-15T00:28:44.999Z] - Método: GET - Ruta: /login
+[2026-09-15T00:28:47.111Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T00:28:47.384Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:28:48.938Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:28:49.078Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:29:04.273Z] - Método: GET - Ruta: /usuarios?editar=15
+[2026-09-15T00:29:04.536Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:29:51.568Z] - Método: GET - Ruta: /
+[2026-09-15T00:36:11.139Z] - Método: GET - Ruta: /
+[2026-09-15T00:36:13.001Z] - Método: GET - Ruta: /favicon.ico
+[2026-09-15T00:36:26.097Z] - Método: GET - Ruta: /
+[2026-09-15T00:36:40.156Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T00:36:48.548Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:40:22.832Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:41:14.343Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:48:46.332Z] - Método: GET - Ruta: /login
+[2026-09-15T00:48:48.178Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T00:48:48.437Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:48:53.651Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T00:49:10.607Z] - Método: GET - Ruta: /usuarios?editar=14
+[2026-09-15T00:52:07.381Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T00:52:07.890Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:03:16.471Z] - Método: GET - Ruta: /usuarios?editar=4
+[2026-09-15T01:03:16.814Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:03:38.682Z] - Método: PUT - Ruta: /api/usuarios/4
+[2026-09-15T01:03:38.869Z] - USUARIO EDITADO - Actor: Usuario genérico - ID: 4 - Modificaciones: salario: "300000"
+[2026-09-15T01:03:38.881Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T01:03:39.012Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:03:56.722Z] - Método: GET - Ruta: /
+[2026-09-15T01:04:21.178Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:05:18.479Z] - Método: POST - Ruta: /api/usuarios
+[2026-09-15T01:05:18.662Z] - TRANSACCION COMMIT - USUARIO AGREGADO - ID: 16
+[2026-09-15T01:06:08.230Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T01:06:08.531Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:06:17.377Z] - Método: PUT - Ruta: /api/usuarios/14
+[2026-09-15T01:11:58.881Z] - Método: PUT - Ruta: /api/usuarios/14
+[2026-09-15T01:12:47.063Z] - Método: DELETE - Ruta: /api/usuarios/14
+[2026-09-15T01:13:00.065Z] - Método: DELETE - Ruta: /api/usuarios/14
+[2026-09-15T01:13:01.909Z] - Método: DELETE - Ruta: /api/usuarios/14
+[2026-09-15T01:13:05.226Z] - Método: DELETE - Ruta: /api/usuarios/15
+[2026-09-15T01:13:05.246Z] - USUARIO ELIMINADO - ID: 15 - Nombre: Mario Fernandez - Lugar: Nancagua - Salario: 2.00
+[2026-09-15T01:13:05.252Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:16:49.980Z] - Método: POST - Ruta: /api/usuarios/14
+[2026-09-15T01:16:56.502Z] - Método: PUT - Ruta: /api/usuarios/14
+[2026-09-15T01:17:02.740Z] - Método: PATCH - Ruta: /api/usuarios/14
+[2026-09-15T01:17:08.639Z] - Método: GET - Ruta: /api/usuarios/14
+[2026-09-15T01:17:10.434Z] - Método: GET - Ruta: /api/usuarios/14
+[2026-09-15T01:17:23.222Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:17:44.922Z] - Método: GET - Ruta: /status
+[2026-09-15T01:17:58.544Z] - Método: GET - Ruta: /
+[2026-09-15T01:18:01.011Z] - Método: GET - Ruta: /status
+[2026-09-15T01:18:03.104Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T01:18:03.327Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:18:06.493Z] - Método: GET - Ruta: /login
+[2026-09-15T01:18:23.962Z] - Método: POST - Ruta: /login
+[2026-09-15T01:18:24.251Z] - LOGIN EXITOSO - ID: 14 - Email: prueba@gmail.com
+[2026-09-15T01:18:24.260Z] - Método: GET - Ruta: /perfil
+[2026-09-15T01:18:30.741Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T01:18:30.840Z] - Método: GET - Ruta: /api/usuarios
+[2026-09-15T01:18:34.179Z] - Método: GET - Ruta: /perfil
+[2026-09-15T01:18:42.376Z] - Método: GET - Ruta: /login
+[2026-09-15T01:18:44.789Z] - Método: GET - Ruta: /perfil
+[2026-09-15T01:18:57.248Z] - Método: POST - Ruta: /perfil
+[2026-09-15T01:18:57.533Z] - PERFIL ACTUALIZADO - Actor: prueba inicial - ID: 14 - Modificaciones: salario: 300000, password: "[MODIFICADA]"
+[2026-09-15T01:18:57.542Z] - Método: GET - Ruta: /perfil?success=1
+[2026-09-15T01:20:12.591Z] - Método: POST - Ruta: /perfil
+[2026-09-15T01:20:12.846Z] - PERFIL ACTUALIZADO - Actor: prueba inicial - ID: 14 - Modificaciones: salario: 300000, password: "[MODIFICADA]"
+[2026-09-15T01:20:12.852Z] - Método: GET - Ruta: /perfil?success=1
+[2026-09-15T01:20:15.947Z] - Método: GET - Ruta: /
+[2026-09-15T01:20:18.325Z] - Método: GET - Ruta: /logout
+[2026-09-15T01:20:18.335Z] - Método: GET - Ruta: /login
+[2026-09-15T01:20:24.990Z] - Método: GET - Ruta: /usuarios
+[2026-09-15T01:20:25.242Z] - Método: GET - Ruta: /api/usuarios

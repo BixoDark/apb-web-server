@@ -15,8 +15,10 @@ El proyecto permite registrar, consultar, editar y eliminar usuarios, validando 
   - Eliminar usuarios.
 - Validación de campos obligatorios y salario no negativo.
 - Registro de accesos y operaciones en `logs/log.txt`.
+- Alta transaccional: cada usuario se registra junto con su historial y se revierte todo si una acción falla.
 - Manejo de rutas inexistentes con respuesta HTTP 404.
 - API REST JSON para consultar y administrar usuarios desde Postman u otros clientes HTTP.
+- Las respuestas públicas de usuarios incluyen todos los datos necesarios, excepto `email` y `password`.
 - La interfaz web consume la API JSON y transforma sus respuestas en contenido visible.
 
 ## Tecnologías
@@ -37,6 +39,7 @@ Puedes comprobar las versiones disponibles con:
 ```bash
 node --version
 npm --version
+```
 
 ## Instalación
 
@@ -90,6 +93,8 @@ Con la configuración predeterminada, la aplicación estará disponible en:
 | `POST` | `/api/usuarios` | Crea un usuario desde un cuerpo JSON |
 | `PUT` | `/api/usuarios/:id` | Actualiza un usuario desde un cuerpo JSON |
 | `DELETE` | `/api/usuarios/:id` | Elimina un usuario |
+| `PUT` | `/usuarios/:id` | Actualiza un usuario desde un cuerpo JSON |
+| `DELETE` | `/usuarios/:id` | Elimina un usuario |
 
 Las rutas `/usuarios` conservan el flujo de formularios web tradicional. La API utiliza los métodos HTTP estándar: `GET` para consultar (pull), `POST` para crear, `PUT` para actualizar y `DELETE` para eliminar. `push` y `pull` no son métodos HTTP; son términos habituales para enviar y obtener información.
 
@@ -121,7 +126,7 @@ PUT    http://localhost:3000/api/usuarios/1
 DELETE http://localhost:3000/api/usuarios/1
 ```
 
-Las respuestas de la API tienen formato JSON. Las operaciones exitosas incluyen un mensaje y, cuando corresponde, el usuario afectado.
+Las respuestas de la API tienen formato JSON. Las operaciones exitosas incluyen un mensaje y, cuando corresponde, el usuario afectado. Por seguridad, las respuestas públicas de usuarios no incluyen los campos `email` ni `password`; esos datos permanecen disponibles internamente para autenticación y validaciones.
 
 ### Datos de usuario
 
@@ -133,6 +138,8 @@ El formulario utiliza los siguientes campos:
 | `apellido` | Texto | Obligatorio |
 | `lugar` | Texto | Obligatorio |
 | `salario` | Número | Obligatorio y mayor o igual que `0` |
+
+Los campos `email` y `password` se utilizan en el registro, inicio de sesión y actualización del perfil, pero no se devuelven en las respuestas públicas de la API de usuarios.
 
 Para obtener la respuesta JSON del estado del servidor, realiza una solicitud que no acepte HTML. Por ejemplo:
 
@@ -159,7 +166,28 @@ abp-m6/
 
 ## Persistencia y logs
 
-Los usuarios se almacenan actualmente en memoria. Por este motivo, la información registrada se pierde cuando el servidor se reinicia. La carpeta `logs/` conserva un registro de accesos, altas, modificaciones y eliminaciones en formato de texto.
+Los usuarios se almacenan en PostgreSQL mediante Sequelize, en la tabla `usuarios`. La estructura se sincroniza al iniciar el servidor. La carpeta `logs/` conserva un registro de accesos, altas, modificaciones y eliminaciones en formato de texto. Las ediciones registran el actor, el ID del usuario afectado, los campos modificados y sus nuevos valores. Si la solicitud no tiene una sesión autenticada, el actor se registra como `Usuario genérico`.
+
+Ejemplo de una edición registrada:
+
+```text
+[2026-09-14T12:00:00.000Z] - USUARIO EDITADO - Actor: Juan Pérez - ID: 4 - Modificaciones: lugar: "Santiago", salario: "850000"
+```
+
+Cuando se cambia una contraseña desde el perfil, el log registra únicamente `password: "[MODIFICADA]"`; nunca se guarda la contraseña ni su hash en el archivo de log.
+
+La tabla `historial_usuarios` registra la acción `CREADO` asociada a cada alta. El alta del usuario y su historial se ejecuta dentro de una única transacción Sequelize. Si ocurre un error, ambas operaciones hacen rollback y se registra el resultado en consola y en `logs/log.txt`.
+
+### Evidencia del rollback
+
+Para forzar un fallo controlado, envía `forzarFallo: true` junto con los datos de un usuario:
+
+```powershell
+$body = @{ nombre = 'Rollback'; apellido = 'Prueba'; lugar = 'Santiago'; salario = '1000'; forzarFallo = $true } | ConvertTo-Json
+Invoke-RestMethod -Uri 'http://localhost:3000/api/usuarios' -Method Post -ContentType 'application/json' -Body $body
+```
+
+La respuesta será `500` con `rollback: true`, no aparecerá ningún usuario nuevo en `GET /api/usuarios` y la consola mostrará `TRANSACCION ROLLBACK`.
 
 El archivo `.env` debe mantenerse fuera del control de versiones. Si se utiliza Git, se recomienda incluirlo en `.gitignore` junto con otros archivos locales o sensibles.
 

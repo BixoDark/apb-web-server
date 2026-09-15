@@ -27,11 +27,17 @@
   <aside class="col-12 col-lg-4 {{#if editingUser}}order-first{{else}}order-last order-lg-first{{/if}}">
     <div class="card border border-light-subtle shadow-sm rounded-3 bg-white">
       <div class="card-body p-4">
-        <h2 class="h5 fw-bold text-dark border-bottom pb-3 mb-3">
-          {{#if editingUser}}Editar usuario{{else}}Agregar usuario{{/if}}
-        </h2>
+        {{#if editingBlocked}}
+          <h2 class="h5 fw-bold text-dark border-bottom pb-3 mb-3">Usuario no editable</h2>
+          <div class="alert alert-warning border-0 shadow-sm rounded-3 mb-0" role="alert">
+            <div class="small fw-semibold">No es posible editar este Usuario.</div>
+          </div>
+        {{else}}
+          <h2 class="h5 fw-bold text-dark border-bottom pb-3 mb-3">
+            {{#if editingUser}}Editar usuario{{else}}Agregar usuario{{/if}}
+          </h2>
 
-        <form id="user-form" method="POST" action="{{#if editingUser}}/usuarios/{{editingUser.id}}/editar{{else}}/usuarios{{/if}}" data-user-id="{{editingUser.id}}">
+          <form id="user-form" method="POST" action="{{#if editingUser}}/usuarios/{{editingUser.id}}/editar{{else}}/usuarios{{/if}}" data-user-id="{{editingUser.id}}">
           <!-- Campo Nombre -->
           <div class="mb-3 text-start">
             <label class="form-label fw-bold text-dark small mb-1" for="nombre">Nombre</label>
@@ -107,7 +113,8 @@
             <a class="btn btn-outline-secondary py-2" href="/usuarios">Cancelar edición</a>
             {{/if}}
           </div>
-        </form>
+          </form>
+        {{/if}}
       </div>
     </div>
   </aside>
@@ -144,6 +151,7 @@
                 </div>
 
                 <!-- Botones Acciones -->
+                {{#unless password}}
                 <div class="d-flex gap-2 w-100 w-sm-auto justify-content-end border-top pt-2 pt-sm-0 border-sm-top-0">
                   <a class="btn btn-sm btn-outline-secondary px-3 py-1 flex-fill flex-sm-grow-0 text-center" href="/usuarios?editar={{id}}">
                     Editar
@@ -154,6 +162,9 @@
                     </button>
                   </form>
                 </div>
+                {{else}}
+                <span class="badge bg-light text-secondary border">Usuario no editable</span>
+                {{/unless}}
               </article>
               {{/each}}
             </div>
